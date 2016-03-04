@@ -6,15 +6,12 @@
 		<script type="text/javascript" src="assets/libs/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="assets/libs/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
 		<script type="text/javascript" src="assets/js/controllers.js"></script>
 
 	</head>
-	<body ng-controller="HomeController">
-		<ul>
-			<li ng-repeat="skill in skills">
-				<span>{{skill.tool}}</span>
-				<p>{{skill.interest}}</p>
-			</li>
-		</ul>
-	</body>
+	<body>
+		<div ng-view></div>
+    </body>
 </html>

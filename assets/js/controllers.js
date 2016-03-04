@@ -1,9 +1,10 @@
 'use strict';
 
 /* Controllers */
-var resumeApp = angular.module('resumeApp', []);
+var resumeAppControllers = angular.module('resumeAppControllers', []);
 
-resumeApp.controller('HomeController', function($scope) {
+resumeAppControllers.controller('HomeController', ['$scope', '$http', 
+	function($scope, $http) {
 	$scope.skills = [
 		{
 			'tool': 'HTML',
@@ -14,4 +15,4 @@ resumeApp.controller('HomeController', function($scope) {
 			'interest': '10'
 		}
 	]
-})
+}]);

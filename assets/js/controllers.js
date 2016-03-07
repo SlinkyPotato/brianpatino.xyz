@@ -3,7 +3,7 @@
 /* Controllers */
 var resumeAppControllers = angular.module('resumeAppControllers', []);
 
-resumeAppControllers.controller('HomeController', ['$scope', '$http', 
+resumeAppControllers.controller('homeController', ['$scope', '$http',
 	function($scope, $http) {
 	$scope.skills = [
 		{

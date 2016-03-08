@@ -18,12 +18,19 @@ a.navbar-brand {
     color: #ffffff!important;
 }
 
+#contact h2 {
+    color: #2c3e50!important;
+}
+
 #portfolio h2{
     color: #2c3e50!important;
 }
 
-#contact h2 {
-    color: #2c3e50!important;
+#portfolio p {
+    font-size: 19px;
+}
+#portfolio h4 {
+    margin-top: 2px;
 }
 
 #skill-1 {

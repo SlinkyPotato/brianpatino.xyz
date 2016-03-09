@@ -76,6 +76,16 @@ div.contacts {
 span#copyright {
     text-decoration: line-through;
 }
+.push-about-content {
+    padding-top: 35px;
+}
+@media (max-width: 768px) {
+    #portfolio, 
+    #about,
+    #contact {
+        text-align: center;
+    }
+}
 
 /**/
 

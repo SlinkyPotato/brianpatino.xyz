@@ -10,7 +10,7 @@ var resumeApp = angular.module('resumeApp', [
 resumeApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.when('/home', {
-			templateUrl: '/resume-website/app/components/home/home.html',
+			templateUrl: 'app/components/home/home.html',
 			controller: 'homeController'
 		}).otherwise({
 			redirectTo: '/home'

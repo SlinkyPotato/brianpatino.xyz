@@ -1,8 +1,6 @@
 .navbar-header a:hover,
 ul.navbar-nav > li > a:hover {
     color: #1895BC !important;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
 
@@ -126,8 +124,6 @@ p {
 
     .navbar-default {
         padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
         transition: padding .3s;
     }
 }

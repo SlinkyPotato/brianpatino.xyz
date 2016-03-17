@@ -1,0 +1,14 @@
+Hi I really like your page, it looks great and the code is well styled.
+
+Reading it I felt that there could be more comments specifically pertaining to the js components 
+which were rather short and lacking any real description or ovbious explaintion for being.
+
+The major note I would make is that you aught to use CDN ! 
+referencing your java scripts from centeralized locations has multiple benifits,
+(from the slides)
+1 ) Reduce page load times because files may be pre-cached.
+2 )Faster web pages becasue of distributed datacenters
+3 ) More consistent performance from reduced server load.
+
+Finally I added A line to your css to mkae the text in the ul-navbar 
+fade to white from blue on mouse off.

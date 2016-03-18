@@ -49,35 +49,35 @@ p {
     color: #1895BC;
 }
 
-#skill-1 {
+.skills div:nth-child(1){
     opacity: 0.7;
 }
 
-#skill-2 {
+.skills div:nth-child(2){
     opacity: 0.6;
 }
 
-#skill-3 {
+.skills div:nth-child(3){
     opacity: 0.5;
 }
 
-#skill-4 {
+.skills div:nth-child(4){
     opacity: 0.4;
 }
 
-#skill-5 {
+.skills div:nth-child(5){
     opacity: 0.3;
 }
 
-#skill-6 {
+.skills div:nth-child(6){
     opacity: 0.2;
 }
 
-#skill-7 {
+.skills div:nth-child(7){
     opacity: 0.1;
 }
 
-#skill-8 {
+.skills div:nth-child(8){
     font-size: 2.0em;
 }
 

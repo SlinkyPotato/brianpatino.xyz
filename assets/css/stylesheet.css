@@ -153,3 +153,7 @@ section.success {
     width: 135px;
     display: inline-block;
 }
+
+.img-rounded {
+    display: inline-block;
+}

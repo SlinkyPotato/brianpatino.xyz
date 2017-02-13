@@ -11,19 +11,19 @@
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/ie10-viewport-bug-workaround.css">
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/css/freelancer.css">
-  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <link rel="stylesheet" href="app/app.css">
   <!-- JS -->
-  <script type="text/javascript" src="assets/libs/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
-  <script type="text/javascript" src="assets/libs/angular-route/angular-route.min.js"></script>
-  <script type="text/javascript" src="assets/libs/wow/dist/wow.min.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
-  <script type="text/javascript" src="assets/js/controllers.js"></script>
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="node_modules/wowjs/dist/wow.min.js"></script>
+  <script type="text/javascript" src="app/app.js"></script>
+  <script type="text/javascript" src="app/home/home.component.js"></script>
   <!-- Cross-browser support libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -33,7 +33,7 @@
   <link href="assets/fonts/montserrat.css" rel="stylesheet" type="text/css">
   <link href="assets/fonts/lato.css" rel="stylesheet" type="text/css">
 </head>
-<body ng-controller="homeController">
+<body>
 <div ng-view></div>
 </body>
 </html>

@@ -106,7 +106,8 @@ p {
         padding-top: 150px;
     }
 
-    header .intro-text .name {
+    header .intro-text .name,
+    .img-thumbnail {
         margin-top: -70px;
     }
 

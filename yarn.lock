@@ -2,17 +2,17 @@
 # yarn lockfile v1
 
 
-angular-route@^1.6.5:
+angular-route@^1.7.5:
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/angular-route/-/angular-route-1.7.5.tgz#34a3648c407a14a030d075cf485318e33ba23f0e"
   integrity sha512-7KfyEVVOWTI+jTY/j5rUNCIHGRyeCOx7YqZI/Ci3IbDK7GIsy6xH+hS5ai0Xi0sLjzDZ0PUDO4gBn+K0dVtlOg==
 
-angular@^1.6.5:
+angular@^1.7.5:
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.5.tgz#d1c1c01c6f5dc835638f3f9aa51012857bdac49e"
   integrity sha512-760183yxtGzni740IBTieNuWLtPNAoMqvmC0Z62UoU0I3nqk+VJuO3JbQAXOyvo3Oy/ZsdNQwrSTh/B0OQZjNw==
 
-animate.css@^3.5.2, animate.css@latest:
+animate.css@^3.7.0, animate.css@latest:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-3.7.0.tgz#5de25d1ee5fba11ba6a1e2c4fa568f512eb7d4da"
   integrity sha512-u3iMXDJr0cxMdQocIciDiou9Au4L5f9uT+/jCtprw3s1j3HcfCuI+khF+90Ps2KdsEhM2soF7SXB4WUvI3HlXg==
@@ -22,7 +22,7 @@ async@^1.5.2:
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
 
-bootstrap@^3.3.7:
+bootstrap@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.0.tgz#f8d77540dd3062283d2ae7687e21c1e691961640"
   integrity sha512-F1yTDO9OHKH0xjl03DsOe8Nu1OWBIeAugGMhy3UTIYDdbbIPesQIhCEbj+HEr6wqlwweGAlP8F3OBC6kEuhFuw==
@@ -106,7 +106,7 @@ http-server@^0.11.1:
     portfinder "^1.0.13"
     union "~0.4.3"
 
-jquery@^3.2.1:
+jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
   integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==

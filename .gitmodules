@@ -1,0 +1,3 @@
+[submodule "apps/demo-tictactoe"]
+	path = apps/demo-tictactoe
+	url = git@github.com:amaredeus/demo-tictactoe.git

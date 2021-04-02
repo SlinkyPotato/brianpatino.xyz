@@ -2,7 +2,7 @@ import './App.css';
 
 const HOME_URL = "https://brianpatino.xyz";
 const BLOG_URL = "https://blog.venfo.xyz";
-const APPS_URL = "https://brian.patino.xyz/apps";
+const APPS_URL = "https://brianpatino.xyz/apps";
 
 function App() {
   return (

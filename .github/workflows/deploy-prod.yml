@@ -6,6 +6,9 @@ on:
     branches: [main]
 jobs:
   deploy:
+    environment:
+      name: production-env
+      url: https://brianpatino.xyz
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2

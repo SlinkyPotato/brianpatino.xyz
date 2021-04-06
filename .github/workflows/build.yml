@@ -1,0 +1,10 @@
+name: build-action
+on: [push]
+jobs:
+  build-and-test:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@feature/reactapp-conversion
+      - uses: actions/setup-node@v14.16
+      - run: yarn install
+      - run: yarn test

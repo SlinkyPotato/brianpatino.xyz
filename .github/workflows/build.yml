@@ -9,6 +9,6 @@ jobs:
         with:
           node-version: '14'
       - name: Install dependencies
-      - run: yarn install
-      - run: yarn build
-      - run: yarn test
+        run: yarn install
+      - name: Run test cases
+        run: yarn test

@@ -4,7 +4,7 @@ jobs:
   build-and-test:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@feature/reactapp-conversion
-      - uses: actions/setup-node@v14.16
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
       - run: yarn install
       - run: yarn test

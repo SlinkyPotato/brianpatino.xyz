@@ -1,0 +1,27 @@
+name: Deploy to Production
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install dependencies
+      - run: yarn install
+      - name: Build app
+      - run: yarn build
+      - name: SCP Command to Transfer Files
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "build/"
+          target: "${{ secrets.REMOTE_DIRECTORY }}"

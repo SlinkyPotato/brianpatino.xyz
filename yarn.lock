@@ -3026,7 +3026,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"animate.css@latest, animate.css@npm:^3.7.0":
+animate.css@latest:
   version: 3.7.0
   resolution: "animate.css@npm:3.7.0"
   checksum: 22da06b046db0da3992e42a69f9e45e0b84c19cbf449df4500ae6a5b2bde5bac53c0ea312d823451347b946b5a94c6d804c88aec2b042068070f343db1ca2c9b
@@ -6768,13 +6768,6 @@ __metadata:
   dependencies:
     debug: =3.1.0
   checksum: 6e58e02c31337b6b41ffc3d5f3d49920b7db428eddcf374537da00ef121fe473983e12d8557f4304287604168d3efcc288d1f009abaf4c9d61e5db0c0cee3c4a
-  languageName: node
-  linkType: hard
-
-"font-awesome@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "font-awesome@npm:4.7.0"
-  checksum: 332215ef40b90cb33be5a8b571e99388050976b626b40d79dfdfa8387bbcecde67d4d7d14f66f4263481761e6498d9885723e4a1263380cf4968df8f720ad06d
   languageName: node
   linkType: hard
 
@@ -10942,9 +10935,7 @@ fsevents@^1.2.7:
     "@testing-library/user-event": ^12.1.10
     angular: ^1.7.5
     angular-route: ^1.7.5
-    animate.css: ^3.7.0
     bootstrap: ^3.4.0
-    font-awesome: ^4.7.0
     http-server: ^0.11.1
     jquery: ^3.3.1
     react: ^17.0.2

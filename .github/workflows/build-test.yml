@@ -1,4 +1,4 @@
-name: build-action
+name: Build test
 on: [push, pull_request]
 jobs:
   build-and-test:
@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: yarn install
-      - run: yarn build
-      - run: yarn test
+      - name: Install dependencies
+        run: yarn install
+      - name: Run test cases
+        run: yarn test

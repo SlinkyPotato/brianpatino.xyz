@@ -1,9 +1,5 @@
 name: Deploy to Production
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+on: [push, pull_request]
 jobs:
   deploy:
     runs-on: ubuntu-20.04

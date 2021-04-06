@@ -1,11 +1,14 @@
 name: Deploy to production
 on:
   push:
-    branches: [main]
+    branches: [main,feature/set-environment]
   pull_request:
     branches: [main]
 jobs:
   deploy:
+    environment:
+      name: production_environment
+      url: https://brianpatino.xyz
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2

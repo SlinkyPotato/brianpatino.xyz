@@ -10,9 +10,9 @@ jobs:
         with:
           node-version: '14'
       - name: Install dependencies
-      - run: yarn install
+        run: yarn install
       - name: Build app
-      - run: yarn build
+        run: yarn build
       - name: SCP Command to Transfer Files
         uses: appleboy/scp-action@v0.1.1
         with:

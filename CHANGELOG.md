@@ -5,3 +5,4 @@
 1. Migrate to pnpm
 2. Migrate to Docker
 3. Remove apps folder
+4. Remove github action production deployment

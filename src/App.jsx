@@ -1,7 +1,7 @@
 import './App.css';
 
 const BLOG_URL = "https://blog.venfo.xyz";
-const APPS_URL = "https://brianpatino.xyz/apps";
+const APPS_URL = "https://brianpatino.eth.xyz";
 const EMAIL_ADDRESS = "patinobrian@gmail.com";
 const LINKEDIN_HANDLE = "brianpatino";
 const TWITTER_HANDLE = "Slinkypotatoe";

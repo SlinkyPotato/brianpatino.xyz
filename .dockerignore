@@ -1,0 +1,7 @@
+node_modules
+build
+.pnpm-debug.log
+.idea
+.github
+.dockerignore
+Dockerfile

@@ -1,6 +1,6 @@
 # brianpatino.xyz
 
-## 2.1.0
+## 2.1.0 (2023-05-02)
 
 1. Migrate to pnpm
 2. Migrate to Docker

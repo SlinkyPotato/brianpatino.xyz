@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'docker image build -t amaredeus/brianpatino.xyz:latest .'
                 sh 'PROJECT_VERSION=$(cat package.json | jq -r ".version")'
-                sh 'docker tag amaredeus/brianpatino.xyz:latest amaredeus/brianpatino.xyz:${PROJECT_VERSION}'
+                sh "docker tag amaredeus/brianpatino.xyz:latest amaredeus/brianpatino.xyz:${PROJECT_VERSION}"
             }
         }
         stage("Push Images to Docker") {

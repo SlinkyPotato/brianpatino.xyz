@@ -1,0 +1,4 @@
+services:
+  webapp:
+    container_name: brianpatinoxyz_prod
+    image: amaredeus/brianpatino.xyz:latest

@@ -1,10 +1,10 @@
 import './App.css';
 
-const BLOG_URL = "https://blog.venfo.xyz";
-const APPS_URL = "https://brianpatino.xyz/apps";
+const BLOG_URL = "https://blog.solidchain.xyz";
+const APPS_URL = "https://brianpatino.eth.xyz";
 const EMAIL_ADDRESS = "patinobrian@gmail.com";
 const LINKEDIN_HANDLE = "brianpatino";
-const TWITTER_HANDLE = "Slinkypotatoe";
+const TWITTER_HANDLE = "SlinkyPotato_";
 const GITHUB_HANDLE = "amaredeus";
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <NavigationBar />
       <SkillsHeader />
-      <Portfolio />
-      <About />
-      <Contact />
+      <Portfolio/>
+      <About/>
+      <Contact/>
       <Footer />
       <MobileScroll />
     </div>
@@ -36,10 +36,10 @@ function NavigationBar() {
           </div>
           <div id="navbar" className="collapse navbar-collapse">
             <ul className="nav navbar-nav navbar-right">
-              <li><a href=".">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
               <li><a href={BLOG_URL}>Blog</a></li>
               <li><a href={APPS_URL}>Apps</a></li>
-              <li><a href=".">About</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
           </div>
         </div>
@@ -99,7 +99,7 @@ function Portfolio() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center wow fadeInDown" data-wow-duration="3s">
-              <h2>Portfolio</h2>
+              <h2 id="portfolio">Portfolio</h2>
               <hr className="star-primary" />
             </div>
           </div>
@@ -240,7 +240,7 @@ function About() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center wow fadeInDown" data-wow-duration="2s">
-            <h2>About</h2>
+            <h2 id="about">About</h2>
             <hr className="star-light" />
           </div>
         </div>
@@ -271,7 +271,7 @@ function Contact() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2 className="wow fadeInDown">Contact Me</h2>
+            <h2 className="wow fadeInDown" id="contact">Contact Me</h2>
             <hr className="star-primary" />
           </div>
         </div>
@@ -280,17 +280,17 @@ function Contact() {
             <ul className="list-inline">
               <li>
                 <a href={"https://github.com/" + GITHUB_HANDLE} target="_blank" rel="noreferrer" className="btn-social btn-outline">
-                  <i className="fa fa-fw fa-github-square fa-4x wow rollIn" data-wow-duration="2s"></i>
+                  <i className="fa fa-fw fa-brands fa-github-square fa-4x wow rollIn" data-wow-duration="2s"></i>
                 </a>
               </li>
               <li>
                 <a href={"https://twitter.com/" + TWITTER_HANDLE} target="_blank" rel="noreferrer" className="btn-social btn-outline">
-                  <i className="fa fa-fw fa-twitter fa-4x wow rollIn" data-wow-duration="2s"></i>
+                  <i className="fa fa-fw fa-brands fa-twitter fa-4x wow rollIn" data-wow-duration="2s"></i>
                 </a>
               </li>
               <li>
                 <a href={"https://www.linkedin.com/in/" + LINKEDIN_HANDLE} target="_blank" rel="noreferrer" className="btn-social btn-outline">
-                  <i className="fa fa-fw fa-linkedin fa-4x wow rollIn" data-wow-duration="2s"></i>
+                  <i className="fa fa-fw fa-brands fa-linkedin fa-4x wow rollIn" data-wow-duration="2s"></i>
                 </a>
               </li>
               <li>

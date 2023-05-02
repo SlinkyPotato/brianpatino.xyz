@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sshagent(credentials: ['jenkins-ssh']) {
                     sh '''
-                     ssh -o StrictHostKeychecking=no jenkins@${GRANITE_HOST_IP} rm -f /var/www/brianpatino/**
+                     ssh -o StrictHostKeychecking=no jenkins@${GRANITE_HOST_IP} rm -Rf /var/www/brianpatino/**
                      scp -o StrictHostKeychecking=no -r build/** jenkins@${GRANITE_HOST_IP}:/var/www/brianpatino/
                     '''
                 }

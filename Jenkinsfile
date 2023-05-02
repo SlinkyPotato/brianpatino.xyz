@@ -2,12 +2,6 @@
 pipeline {
     agent any
     stages {
-        agent {
-            docker {
-                image 'node:16.16.0-alpine'
-                reuseNode true
-            }
-        }
         stage("Build Docker Image") {
             steps {
                 sh 'docker image build -t amaredeus/brianpatino.xyz:latest .'

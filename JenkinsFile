@@ -1,13 +1,18 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent {
-        docker {
-            alwaysPull true
-            image 'node:16.16.0-alpine'
-            reuseNode true
+    agent none
+    stages {
+        stage("Build") {
+            agent {
+                docker {
+                    alwaysPull true
+                    image 'node:16.16.0-alpine'
+                    reuseNode true
+                }
+            }
+            steps {
+                sh 'node --version'
+            }
         }
-     }
-    steps {
-        sh 'node --version'
     }
 }

@@ -8,9 +8,19 @@ WORKDIR /app
 RUN npm install -g pnpm@8.4.0
 RUN apk update
 
-# install app dependencies
+# Files required by pnpm install
+COPY pnpm-lock.yaml ./
+
+# Fetch dep from virtual store
+RUN pnpm fetch --prod
+
+# Bundle app source
 COPY . .
-RUN pnpm install
+
+# Install app dependencies
+RUN pnpm install --frozen-lockfile --prod
+
+# Build the app
 RUN pnpm build
 
 # copy build directory to location on production

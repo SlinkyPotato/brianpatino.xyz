@@ -36,8 +36,11 @@ pipeline {
                      scp -o StrictHostKeychecking=no -r build/** jenkins@${GRANITE_HOST_IP}:/var/www/brianpatino/
                     '''
                 }
-                sh 'git tag -a ${PROJECT_VERSION} -m "jenkins release automation"'
-                sh 'git push origin ${PROJECT_VERSION}'
+            }
+            post {
+                success {
+                    sh 'git fetch https://amaredeus:${GH_TOKEN}@github.com/amaredeus/brianpatino.xyz.git --tags --force'
+                }
             }
         }
         stage ("Create Release") {
@@ -45,12 +48,17 @@ pipeline {
                 allOf {
                     branch 'main'
                     expression {
-                        GITHUB_PROJECT_TAG = sh(returnStdout: true, script: 'gh release view ${PROJECT_VERSION} --json tagName -q ".tagName"').trim();
+                        GITHUB_PROJECT_TAG = sh(returnStdout: true, script: 'git tag -l ${PROJECT_VERSION}').trim();
                         return env.PROJECT_VERSION != GITHUB_PROJECT_TAG
                     }
                 }
             }
             steps {
+                sh 'git config --global user.email "patinobrian@gmail.com"'
+                sh 'git config --global user.name "amaredeus"'
+                sh 'git tag -a ${PROJECT_VERSION} -m "automated release with jenkins"'
+                sh 'echo https://amaredeus:${GH_TOKEN}@github.com/amaredeus/brianpatino.xyz.git'
+                sh 'git push https://amaredeus:${GH_TOKEN}@github.com/amaredeus/brianpatino.xyz.git ${PROJECT_VERSION}'
                 sh 'gh release create ${PROJECT_VERSION} --generate-notes dist.zip'
             }
         }

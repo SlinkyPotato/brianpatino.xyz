@@ -4,15 +4,10 @@ free and open to use tools. Feel free to use any section of code needed.
 
 ## Installation
 ```
-yarn install
+pnpm install
 ````
 
 ## Run
 ```
-yarn start
-```
-
-## Build
-```
-yarn build
+pnpm start
 ```

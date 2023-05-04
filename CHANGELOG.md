@@ -1,5 +1,10 @@
 # brianpatino.xyz
 
+## 2.1.1 (2023-05-03)
+
+1. Update readme
+2. Re-add jquery for bootstrap
+
 ## 2.1.0 (2023-05-02)
 
 1. Migrate to pnpm

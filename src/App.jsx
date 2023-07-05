@@ -5,7 +5,7 @@ const APPS_URL = "https://brianpatino.eth.xyz";
 const EMAIL_ADDRESS = "patinobrian@gmail.com";
 const LINKEDIN_HANDLE = "brianpatino";
 const TWITTER_HANDLE = "SlinkyPotato_";
-const GITHUB_HANDLE = "amaredeus";
+const GITHUB_HANDLE = "SlinkyPotato";
 
 function App() {
   return (
@@ -319,7 +319,7 @@ function Footer() {
             <div className="footer-col col-md-4 pull-right">
               <h3>Technology</h3>
               <p>Check out the technologies used to create this page at <a
-                  href="https://github.com/amaredues/resume-website" target="_blank" rel="noreferrer">Github</a>.</p>
+                  href="https://github.com/SlinkyPotato/brianpatino.xyz" target="_blank" rel="noreferrer">Github</a>.</p>
             </div>
           </div>
         </div>

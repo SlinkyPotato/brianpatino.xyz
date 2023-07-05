@@ -1,9 +1,14 @@
 {
   "name": "brianpatino.xyz",
-  "version": "2.1.1",
+  "version": "2.1.3",
   "description": "Personal Website",
   "main": "src",
-  "homepage": ".",
+  "homepage": "./",
+  "engineStrict": true,
+  "engines": {
+    "node": "16.20.1",
+    "npm": "8.19.4"
+  },
   "scripts": {
     "test-legacy": "echo \"Error: no test specified\" && exit 1",
     "start-legacy": "http-server -a localhost -o",
@@ -14,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amaredeus/brianpatino.venfo.xyz.git"
+    "url": "https://github.com/SlinkyPotato/brianpatino.xyz.git"
   },
-  "author": "Brian Patino <patinobrian@gmail.com>",
+  "author": "SlinkyPotato <patinobrian@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amaredeus/brianpatino.venfo.xyz/issues"
+    "url": "https://github.com/SlinkyPotato/brianpatino.xyz/issues"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

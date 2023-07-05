@@ -1,4 +1,4 @@
-FROM node:16.16.0-alpine AS build
+FROM node:16.20.1-alpine
 
 LABEL description="Personal resume website"
 
@@ -20,7 +20,6 @@ COPY . .
 # Install app dependencies
 RUN pnpm install --frozen-lockfile --prod
 
-# Build the app
-RUN pnpm build
+CMD ["pnpm", "build"]
 
 # copy build directory to location on production

@@ -1,5 +1,9 @@
 # brianpatino.xyz
 
+## 2.1.3 (2023-07-05)
+
+1. Update github handle amaredeus -> SliinkyPotato
+
 ## 2.1.1 (2023-05-03)
 
 1. Update readme
